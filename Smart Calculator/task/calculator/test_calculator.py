@@ -10,10 +10,10 @@ class TestCalculator(unittest.TestCase):  # a test case for the calculator.py mo
 
     def test_add(self):
         # tests for the add() function
-        self.assertEqual(calculator.add(['17', '9']), 26)
-        self.assertEqual(calculator.add(['-2', '5']), 3)
+        self.assertEqual(calculator.plus(['17', '9']), 26)
+        self.assertEqual(calculator.plus(['-2', '5']), 3)
         #self.assertEqual(calculator.add(['3']), False)
-        self.assertEqual(calculator.add(['6', '4']), 10)
+        self.assertEqual(calculator.plus(['6', '4']), 10)
 
     def test_playground(self):
         self.assertEqual(calculator.playground("word"), True)
